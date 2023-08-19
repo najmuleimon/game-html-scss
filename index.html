@@ -15,9 +15,17 @@
     <header>
       <div class="container-fluid">
         <div class="header-inner">
-          <a href="#" class="logo">
-            <img src="src/images/logo.png" alt="" class="w-full">
-          </a>
+          <div class="logo-area flex">
+            <!-- mobilemenu toggle -->
+            <button type="button" class="mobile-menu-toggle">
+              <i class="ph ph-list"></i>
+            </button>
+
+            <!-- logo -->
+            <a href="#" class="logo">
+              <img src="src/images/logo.png" alt="" class="w-full">
+            </a>
+          </div>
 
           <div class="content">
             <ul class="flex top-list">
@@ -28,13 +36,115 @@
             </ul>
 
             <div class="bottom-list">
-              <ul class="flex menu-list">
+              <ul class="flex menu-list" id="desktop-submenu">
                 <li>
-                  <button type="button">
+                  <button type="button" class="pc-btn">
                     <i class="ph ph-desktop"></i>
                     PC
                     <i class="ph ph-caret-down"></i>
                   </button>
+                  <div class="submenu">
+                    <div class="submenu-title flex">
+                      <h4>Platforms</h4>
+                      <a href="#">View all</a>
+                    </div>
+                    <div class="grid">
+                      <!-- item 1 -->
+                      <a href="#" class="submenu-item flex">
+                        <div class="img-logo">
+                          <img src="src/images/ea.png" alt="" class="w-full h-full cover">
+                        </div>
+                        <span>Steam</span>
+                      </a>
+
+                      <!-- item 2 -->
+                      <a href="#" class="submenu-item flex">
+                        <div class="img-logo">
+                          <img src="src/images/ea.png" alt="" class="w-full h-full cover">
+                        </div>
+                        <span>Ubisoft Connect</span>
+                      </a>
+
+                      <!-- item 3 -->
+                      <a href="#" class="submenu-item flex">
+                        <div class="img-logo">
+                          <img src="src/images/ea.png" alt="" class="w-full h-full cover">
+                        </div>
+                        <span>EA App</span>
+                      </a>
+
+                      <!-- item 4 -->
+                      <a href="#" class="submenu-item flex">
+                        <div class="img-logo">
+                          <img src="src/images/ea.png" alt="" class="w-full h-full cover">
+                        </div>
+                        <span>Battle.net</span>
+                      </a>
+
+                      <!-- item 5 -->
+                      <a href="#" class="submenu-item flex">
+                        <div class="img-logo">
+                          <img src="src/images/ea.png" alt="" class="w-full h-full cover">
+                        </div>
+                        <span>Rockstar</span>
+                      </a>
+
+                      <!-- item 6 -->
+                      <a href="#" class="submenu-item flex">
+                        <div class="img-logo">
+                          <img src="src/images/ea.png" alt="" class="w-full h-full cover">
+                        </div>
+                        <span>GOG.com</span>
+                      </a>
+
+                      <!-- item 7 -->
+                      <a href="#" class="submenu-item flex">
+                        <div class="img-logo">
+                          <img src="src/images/ea.png" alt="" class="w-full h-full cover">
+                        </div>
+                        <span>Microsoft Store</span>
+                      </a>
+
+                      <!-- item 8 -->
+                      <a href="#" class="submenu-item flex">
+                        <div class="img-logo">
+                          <img src="src/images/ea.png" alt="" class="w-full h-full cover">
+                        </div>
+                        <span>Epic</span>
+                      </a>
+                    </div>
+
+                    <div class="submenu-title flex">
+                      <h4>Prepaid cards</h4>
+                      <a href="#">View all</a>
+                    </div>
+                    <div class="grid">
+                      <!-- item 1 -->
+                      <a href="#" class="submenu-item submenu-item-big">
+                        <div class="img-logo">
+                          <img src="src/images/ea.png" alt="" class="w-full h-full cover">
+                        </div>
+                        <span>Steam Gift Cards</span>
+                      </a>
+
+                      <!-- item 2 -->
+                      <a href="#" class="submenu-item submenu-item-big">
+                        <div class="img-logo">
+                          <img src="src/images/ea.png" alt="" class="w-full h-full cover">
+                        </div>
+                        <span>IG Gift Cards</span>
+                      </a>
+
+                      <!-- item 3 -->
+                      <a href="#" class="submenu-item submenu-item-big">
+                        <div class="img-logo">
+                          <img src="src/images/ea.png" alt="" class="w-full h-full cover">
+                        </div>
+                        <span>Bizzard Gift Cards</span>
+                      </a>
+                    </div>
+
+                  </div>
                 </li>
                 <li>
                   <button type="button">
@@ -59,13 +169,14 @@
                 </li>
 
                 <li>
-                  <button type="button" class="search-btn">
+                  <button type="button" class="search-btn desktop-search-btn">
                     <i class="ph ph-magnifying-glass"></i>
                   </button>
                 </li>
               </ul>
 
-              <form action="#" class="search-form">
+              <!-- desktop search -->
+              <form action="#" class="search-form desktop-search-form">
                 <label for="search">
                   <input type="text" placeholder="Minecraft, RPG, multiplayer...">
                   <button type="submit">Advanced search</button>
@@ -78,19 +189,162 @@
           </div>
 
           
-          <ul class="flex btn-list">
+          <ul class="flex btn-list" id="mobile-search-area">
             <li>
-              <button type="button" class="cart-btn">
+              <a href="#" class="cart-btn">
                 <i class="ph ph-shopping-cart-simple"></i>
-              </button>
+              </a>
             </li>
             <li>
-              <button type="button" class="user-btn">
+              <a href="#" class="user-btn">
                 <i class="ph ph-user"></i>
+              </a>
+            </li>
+            <!-- mobile search -->
+            <li class="mobile-search">
+              <button type="button" class="search-btn mobile-search-btn">
+                <i class="ph ph-magnifying-glass"></i>
               </button>
+              <form action="#" class="search-form mobile-search-form">
+                <label for="search">
+                  <input type="text" placeholder="Minecraft, RPG, multiplayer...">
+                </label>
+              </form>
             </li>
           </ul>
         </div>
+      </div>
+
+      <!-- offcanvas menu for mobile -->
+      <div class="mobile-menu">
+        <div class="menu-header flex">
+          <h5>Menu</h5>
+          <button type="button" class="close-mob-menu">
+            <i class="ph ph-x"></i>
+          </button>
+        </div>
+        <div class="submenu-title flex">
+          <h4>Platforms</h4>
+          <a href="#">View all</a>
+        </div>
+        <ul>
+          <!-- item 1 -->
+          <li>
+            <a href="#" class="submenu-item flex">
+              <div class="img-logo">
+                <img src="src/images/ea.png" alt="" class="w-full h-full cover">
+              </div>
+              <span>Steam</span>
+            </a>
+          </li>
+
+          <!-- item 2 -->
+          <li>
+            <a href="#" class="submenu-item flex">
+              <div class="img-logo">
+                <img src="src/images/ea.png" alt="" class="w-full h-full cover">
+              </div>
+              <span>Ubisoft Connect</span>
+            </a>
+          </li>
+
+          <!-- item 3 -->
+          <li>
+            <a href="#" class="submenu-item flex">
+              <div class="img-logo">
+                <img src="src/images/ea.png" alt="" class="w-full h-full cover">
+              </div>
+              <span>EA App</span>
+            </a>
+          </li>
+
+          <!-- item 4 -->
+          <li>
+            <a href="#" class="submenu-item flex">
+              <div class="img-logo">
+                <img src="src/images/ea.png" alt="" class="w-full h-full cover">
+              </div>
+              <span>Battle.net</span>
+            </a>
+          </li>
+
+          <!-- item 5 -->
+          <li>
+            <a href="#" class="submenu-item flex">
+              <div class="img-logo">
+                <img src="src/images/ea.png" alt="" class="w-full h-full cover">
+              </div>
+              <span>Rockstar</span>
+            </a>
+          </li>
+
+          <!-- item 6 -->
+          <li>
+            <a href="#" class="submenu-item flex">
+              <div class="img-logo">
+                <img src="src/images/ea.png" alt="" class="w-full h-full cover">
+              </div>
+              <span>GOG.com</span>
+            </a>
+          </li>
+
+          <!-- item 7 -->
+          <li>
+            <a href="#" class="submenu-item flex">
+              <div class="img-logo">
+                <img src="src/images/ea.png" alt="" class="w-full h-full cover">
+              </div>
+              <span>Microsoft Store</span>
+            </a>
+          </li>
+
+          <!-- item 8 -->
+          <li>
+            <a href="#" class="submenu-item flex">
+              <div class="img-logo">
+                <img src="src/images/ea.png" alt="" class="w-full h-full cover">
+              </div>
+              <span>Epic</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="submenu-title flex">
+          <h4>Prepaid cards</h4>
+          <a href="#">View all</a>
+        </div>
+
+        <ul>
+          <!-- item 1 -->
+          <li>
+            <a href="#" class="submenu-item flex">
+              <div class="img-logo">
+                <img src="src/images/ea.png" alt="" class="w-full h-full cover">
+              </div>
+              <span>Steam Gift Cards</span>
+            </a>
+          </li>
+
+          <!-- item 2 -->
+          <li>
+            <a href="#" class="submenu-item flex">
+              <div class="img-logo">
+                <img src="src/images/ea.png" alt="" class="w-full h-full cover">
+              </div>
+              <span>IG Gift Cards</span>
+            </a>
+          </li>
+
+          <!-- item 3 -->
+          <li>
+            <a href="#" class="submenu-item flex">
+              <div class="img-logo">
+                <img src="src/images/ea.png" alt="" class="w-full h-full cover">
+              </div>
+              <span>Bizzard Gift Cards</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <!-- header end -->
@@ -110,7 +364,7 @@
                   <svg class="flt_svg" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <filter id="flt_tag">
-                            <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />    
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />    
                             <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="flt_tag" />
                             <feComposite in="SourceGraphic" in2="flt_tag" operator="atop"/>
                         </filter>
@@ -124,6 +378,91 @@
         </div>
       </section>
       <!-- banner end -->
+
+      <!-- trending start -->
+      <section class="trending">
+        <div class="container">
+          <div class="title flex">
+            <h3>Trending</h3>
+            <a href="#">View all</a>
+          </div>
+
+          <div class="grid">
+            <!-- item 1 -->
+            <a href="#" class="single-item">
+              <div class="image">
+                <img src="src/images/img1.jpg" alt="" class="w-full">
+                <h6>
+                  <span>-25%</span>
+                  <svg class="flt_svg" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <filter id="flt_tag">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />    
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="flt_tag" />
+                            <feComposite in="SourceGraphic" in2="flt_tag" operator="atop"/>
+                        </filter>
+                    </defs>
+                  </svg>
+                </h6>
+              </div>
+
+              <div class="item-title flex">
+                <h4>Sengoku Dynasty</h4>
+                <p>19.99€</p>
+              </div>
+            </a>
+
+            <!-- item 2 -->
+            <a href="#" class="single-item">
+              <div class="image">
+                <img src="src/images/img2.jpg" alt="" class="w-full">
+                <h6>
+                  <span>-25%</span>
+                  <svg class="flt_svg" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <filter id="flt_tag">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />    
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="flt_tag" />
+                            <feComposite in="SourceGraphic" in2="flt_tag" operator="atop"/>
+                        </filter>
+                    </defs>
+                  </svg>
+                </h6>
+              </div>
+
+              <div class="item-title flex">
+                <h4><span>DLC</span> The Sims 4 Horse Ranch</h4>
+                <p>19.99€</p>
+              </div>
+            </a>
+
+            <!-- item 3 -->
+            <a href="#" class="single-item">
+              <div class="image">
+                <img src="src/images/img3.jpg" alt="" class="w-full">
+                <h6>
+                  <span>-25%</span>
+                  <svg class="flt_svg" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <filter id="flt_tag">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />    
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="flt_tag" />
+                            <feComposite in="SourceGraphic" in2="flt_tag" operator="atop"/>
+                        </filter>
+                    </defs>
+                  </svg>
+                </h6>
+              </div>
+
+              <div class="item-title flex">
+                <h4>Remnant 2</h4>
+                <p>34.89€</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- trending end -->
     </main>
     <!-- main end -->
 
